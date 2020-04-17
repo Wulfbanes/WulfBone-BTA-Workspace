@@ -1,0 +1,5 @@
+#Exclude Windows Junk
+desktop.ini
+
+#Exlude MODS build
+MODS/
