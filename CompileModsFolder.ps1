@@ -2,8 +2,13 @@
 #Set Execution Directory to Workspace Folder
 $Basefolder = Split-Path $MyInvocation.MyCommand.Path
 
-#Instanciate from BaseFolder
+#Instantiate from BaseFolder
 cd $Basefolder
+
+#Make Mods Folder if does not exist.
+if (!(test-path "$Basefolder\MODS"))
+{mkdir "$Basefolder\MODS"}
+
 
 #Empty MODS folder
 gci $basefolder\MODS | Select-Object | Remove-Item -Recurse -force

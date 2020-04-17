@@ -1,0 +1,16 @@
+diff_Davion
+diff_Steiner
+diff_Kurita
+diff_Marik
+diff_Liao
+diff_Mercenary
+diff_Taurian
+diff_Magistracy
+diff_Aurigan
+diff_start_bmf
+diff_Pirate
+diff_Primitive
+diff_Brawling
+diff_FireSupport
+diff_Recon
+diff_Sniper

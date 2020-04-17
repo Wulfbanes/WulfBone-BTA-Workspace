@@ -1,0 +1,69 @@
+        public void RemoveSimGameEventResult(TemporarySimGameResult result)
+        {
+            StatCollection statCol;
+            TagSet tagSet;
+            Pilot p = null;
+            MechDef m = null;
+            switch (result.Scope)
+            {
+                case EventScope.AllMechs:
+                case EventScope.RandomMech:
+                case EventScope.Mech:
+                case EventScope.SecondaryMech:
+                    m = result.TargetMechDef;
+                    statCol = m.Stats;
+                    tagSet = m.MechTags;
+                    break;
+                case EventScope.MechWarrior:
+                case EventScope.AllMechWarriors:
+                case EventScope.TertiaryMechWarrior:
+                case EventScope.SecondaryMechWarrior:
+                case EventScope.DeadMechWarrior:
+                    if (result.TargetPilot == null)
+                    {
+                        logger.LogError(string.Format("Unable to resolve scope of {0} without a valid pilot ref", result.Scope));
+                        return;
+                    }
+
+                    Pilot targetPilot = result.TargetPilot;
+
+                    if (result.Scope != EventScope.DeadMechWarrior)
+                    {
+                        foreach (Pilot pot in PilotRoster)
+                        {
+                            if (pot.GUID == targetPilot.GUID)
+                            {
+                                if (pot != targetPilot)
+                                {
+                                    logger.LogWarning("pilot roster same guid different reference");
+                                }
+
+                                p = pot;
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (Pilot pot in Graveyard)
+                        {
+                            if (pot.GUID == targetPilot.GUID)
+                            {
+                                if (pot != targetPilot)
+                                {
+                                    logger.LogWarning("graveyard same guid different reference");
+                                }
+
+                                p = pot;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (p == null)
+                    {
+                        //AJNote: 5/20 - Reducing to warning from error. This is an expected case that can happen
+                        // If  the pilot has been dismissed before their temp tags have expired.
+                        logger.LogWarning(string.Format("p is still null. unable to resolve scope of {0} without a valid pilot ref", result.Scope));
+                        return;
+                    }
