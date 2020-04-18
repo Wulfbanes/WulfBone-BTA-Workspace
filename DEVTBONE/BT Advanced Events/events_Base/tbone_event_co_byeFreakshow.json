@@ -1,7 +1,7 @@
 {
     "Description" : {
         "Id" : "tbone_event_co_byeFreakshow",
-        "Name" : "tbone_event_co_byeFreakshow",
+        "Name" : "Fill and Forget",
         "Details" : "<b>\u201CCommander {Commander.LastName} to the MedBay. Repeat, Commander {Commander.LastName} to the MedBay.\u201D</b>\r\n\r\n\r\nYou make your way through the corridors to find [[DM.BaseDescriptionDefs[TBoneLoreDoc], Doc Cobble]] standing outside one of the MedBay operating theaters.\r\n\r\n\u201CCommander, I warned you what would happen if you kept having me shoot [[SCN_MW,{SCN_MW.Callsign}]] up with [[DM.BaseDescriptionDefs[TBoneLoreQuikStim], Quickstim]] for every op. Chronic stim usage combined with the fact that he\u2019s drinking more than ever. His organs are shutting down, one by one. With the hospital facilities here fully restored, we might have a chance at saving him and conducting a full organ transplant. Without them, he\u2019s got no hope.\u201D",
         "Icon" : "uixTxrSpot_MedBay.png"
     },
