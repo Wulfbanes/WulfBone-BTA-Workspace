@@ -12,7 +12,7 @@
         "RequirementTags" : {
             "tagSetSourceFile" : "Tags/CompanyTags",
             "items" : [
-                "argo_medBay1"
+                "argo_medBay2"
             ]
         },
         "ExclusionTags" : {
