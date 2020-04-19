@@ -171,7 +171,7 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "Sumire destorys Freakshow's brigands",
+                        "Name" : "Sumire destroys Freakshow's brigands",
                         "Details" : "You try to talk [[DM.BaseDescriptionDefs[TBoneLoreFreakshow], Freakshow]] down, stalling while Sumire gets the Leopard warmed up. Just as promised, he is ready when the Leopard leaps free from its docking collar on the side of the <i>Argo</i> and the pirate ships open fire immediately with lasers and PPCs, inflicting heavy damage. Within seconds, Sumire is able to acquire a firing solution and several LRM salvos impact [[DM.BaseDescriptionDefs[TBoneLoreFreakshow], Freakshow's]] ramshackle fleet, destroying them utterly.\r\n\r\nAs the damage control teams call in, Yang reports heavy damage to the MechBay that will cost a pretty penny to repair and [[DM.BaseDescriptionDefs[TBoneLoreDoc], Doc]] reports a few casualties in the MedBay, including [[SCN_MW,{SCN_MW.Callsign}]], who is suffering from severe burns and decompression sickness.",
                         "Icon" : null
                     },
@@ -219,7 +219,7 @@
                                 {
                                     "typeString" : "System.Int32",
                                     "name" : "MechTechSkill",
-                                    "value" : "-2",
+                                    "value" : "-4",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
@@ -274,7 +274,7 @@
             "Description" : {
                 "Id" : "outcome_2",
                 "Name" : "Broadcast for help from the system authorities.",
-                "Details" : "[Friendly with {TGT_SYSTEM.OwnerDef.ShortName}]",
+                "Details" : "[Friendly with local {TGT_SYSTEM.OwnerDef.ShortName}]",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -347,7 +347,7 @@
     "PublishState" : "PUBLISHED",
     "ValidationState" : "UNTESTED",
     "EventType" : "NORMAL",
-    "OneTimeEvent" : false,
+    "OneTimeEvent" : true,
     "Tags" : {
         "tagSetSourceFile" : "tags/EventTags",
         "items" : []
