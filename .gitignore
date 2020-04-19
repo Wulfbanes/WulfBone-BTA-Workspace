@@ -7,3 +7,7 @@ MODS/
 #Exlude ToDos
 DEVWULF/ToDo.txt
 DEVTBONE/ToDo.txt
+
+#Exclude Temp files from save editor
+TOOLS\BattleTech Save Editor\BtSaveEditorLog.txt
+TOOLS\BattleTech Save Editor\BtSaveEditSettings.xml
