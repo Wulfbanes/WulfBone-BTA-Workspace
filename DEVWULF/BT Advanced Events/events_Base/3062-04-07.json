@@ -2,7 +2,7 @@
     "Description": {
         "Id": "3062-04-07",
         "Name": "MercNews Broadcast",
-        "Details": "HOSTILITIES CONTINUE IN ST. IVES CONFLICT\r\n\n\nSt. Ives, [[DM.Factions[faction_Ives],St. Ives Compact]]: Confounding all expectations, forces belonging to the [[DM.Factions[faction_Ives],St. Ives Compact]] have struck at critical targets within the [[DM.Factions[faction_Liao],Capellan Confederation]], reportedly inflicting severe damage to the DropShip construction and repair facilities on Necromo and the aerospace fighter facilities on Sarna. These attacks are a clear attempt by the [[DM.Factions[faction_Ives],St. Ives Compact]] to damage the supply lines of the Capellan war machine and make the Capellans’ continued prosecution of this conflict financially and logistically untenable.\r\n\n\nWould you like to know more?",
+        "Details": "HOSTILITIES CONTINUE IN ST. IVES CONFLICT\r\n\n\nSt. Ives, [[DM.Factions[faction_Ives],St. Ives Compact]]: Confounding all expectations, forces belonging to the [[DM.Factions[faction_Ives],St. Ives Compact]] have struck at critical targets within the [[DM.Factions[faction_Liao],Capellan Confederation]], reportedly inflicting severe damage to the DropShip construction and repair facilities on Necromo and the aerospace fighter facilities on Sarna. These attacks are a clear attempt by the [[DM.Factions[faction_Ives],St. Ives Compact]] to damage the supply lines of the Capellan war machine and make the Capellans' continued prosecution of this conflict financially and logistically untenable.\r\n\n\nWould you like to know more?",
         "Icon": "uixTxrSpot_ComputerScreen.png"
     },
     "Scope": "Company",
