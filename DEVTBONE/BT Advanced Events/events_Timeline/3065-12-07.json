@@ -1,8 +1,8 @@
 {
     "Description": {
-        "Id": "3062-03-07",
+        "Id": "3065-12-07",
         "Name": "MercNews Broadcast",
-        "Details": "[[DM.BaseDescriptionDefs[LoreFWC],FOCHT WAR COLLEGE]] NOW RECRUITING!\r\n\n\nTukayyid, [[DM.Factions[faction_Rasalhague],Free Rasalhague Republic]]: [[DM.BaseDescriptionDefs[LoreFWC],Focht War College]] has officially reinstated the famed [[DM.BaseDescriptionDefs[LoreStarLeague],Star League]]-era Gunslinger Program with a new twist. Where the original Gunslinger Program was formed with the goal of improving SLDF mechwarrior training to match that of [[DM.BaseDescriptionDefs[LoreKuritaDCMS],DCMS]] duelists, the reinstated Gunslinger Program is specifically designed to give Inner Sphere personnel an edge when fighting Clanners. The FWC Gunslinger Program is open to the citizens of all [[DM.BaseDescriptionDefs[LoreStarLeague2],Star League]] member states and promises to give enrollees the advanced tactical training needed to take on Clan warriors in one-on-one duels.",
+        "Details": "[[DM.BaseDescriptionDefs[LoreSandoval],JAMES SANDOVAL]] REMOVED AS MARCH MINISTER, SON TANCRED SUCCEEDS!\r\n\n\nRobinson, [[DM.BaseDescriptionDefs[LoreFedCom],Federated Commonwealth]]: With the abject failure of his invasion of the Draconis Combine, [[DM.BaseDescriptionDefs[LoreSandoval],Duke James Sandoval]] reportedly returned to Robinson a broken man, physically, mentally, emotionally. Although still recovering from the chemical attack on Tsamma, [[DM.BaseDescriptionDefs[TBoneLoreTancredSandoval],Baron Tancred Sandoval]] returned to Robinson to face the bitter shell that had been his father. Tancred reportedly asked that he might shoulder his fathers' burdens, to which the old Duke replied \"Take them all, I've done my part.\" Baron Tancred was thus officially avowed Minister of the Draconis March on 7 October.",
         "Icon": "uixTxrSpot_ComputerScreen.png"
     },
     "Scope": "Company",
@@ -26,7 +26,7 @@
             "Description": {
                 "Id": "continue",
                 "Name": "Continue.",
-                "Details": "Broadcast continues",
+                "Details": "Broadcast continues.",
                 "Icon": ""
             },
             "RequirementList": [],
@@ -35,13 +35,13 @@
                     "Description": {
                         "Id": "continue1",
                         "Name": "MercNews Broadcast",
-                        "Details": "FEDCOM DEVELOPS NEW ARMAMENTS!\r\n\n\nGulkana, [[DM.BaseDescriptionDefs[LoreFedCom],Federated Commonwealth]]: FedCom scientists and engineers have developed a new type of Autocannon base on the ancient principle of the gatling gun. Dubbed the \"Rotary Autocannon,\" or RAC, the new weapons promise to deliver a rate of fire six times that of a standard Autocannon, and three times that of an Ultra Autocannon. Although technically restricted to [[DM.BaseDescriptionDefs[LoreFedCom],Federated Commonwealth]] forces, it is likely only a matter of time before this technology finds its way across the Inner Sphere.",
+                        "Details": "INTER-CLAN SPARRING CONTINUES AS [[DM.Factions[faction_ClanSteelViper],STEEL VIPERS]] STRIKE [[DM.Factions[faction_ClanSnowRaven],SNOW RAVENS]]!\r\n\n\nOutreach: Reliable intelligence from Clan space is always hard to come by, but it appears that [[DM.Factions[faction_ClanSteelViper],Clan Steel Viper]] has conducted an audacious strike against the [[DM.Factions[faction_ClanSnowRaven],Snow Raven]] industrial capital of Lum. Reportedly winning [[DM.BaseDescriptionDefs[LoreTrialPoss],Trial]] after [[DM.BaseDescriptionDefs[LoreTrialPoss],Trial]] on the ground, only a successful [[DM.Factions[faction_ClanSnowRaven],Snow Raven]] naval blockage was able to starve the invading force of the resources needed to maintain their invasion. Stripping the world of as much materiel and equipment as possible, the [[DM.Factions[faction_ClanSteelViper],Steel Vipers]] were able to break through the [[DM.Factions[faction_ClanSnowRaven],Snow Raven]] blockade and escape, but not before losing Khan [[DM.BaseDescriptionDefs[TBoneLorePerigardZalman],Perigard Zalman]] and his DropShip in the process.",
                         "Icon": ""
                     },
                     "Weight": 100,
                     "Results": [
                         {
-                            "Scope": "Company",
+                            "Scope": "",
                             "Requirements": null,
                             "AddedTags": {
                                 "items" : [
