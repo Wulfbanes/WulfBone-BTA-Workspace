@@ -1,9 +1,25 @@
 Blaze - need for speed
 
-[[SCN_MW,{SCN_MW.Callsign}]] asks to see you after mess one evening.\r\n\n
-\"Commander, I've got an interesting proposal for you. You know I've always loved going fast, and before I enlisted in the [[DM.BaseDescriptionDefs[LoreMAF],MAF]] I was a hell of an off-road endurance racer. We travel all over the Inner Sphere but spend half the time sitting in orbit doing nothing. I want to race again, but I need startup funding and someone to call strategy for me. That's where you come in. You call races for me, and we split the cost <i>and</i> the winnings 50-50. I even tracked down two vehicles that should work, and they both cost about the same. First is a classic for a reason, the Apocalypse World Rover, built by [[DM.BaseDescriptionDefs[LoreGM],GM]]. The second is a newer design by [[DM.BaseDescriptionDefs[LoreEarthwerksInc],Earthwerks]], the Ibex RV.\r\n\n\nWaddya say?
+[[SCN_MW,{SCN_MW.Callsign}]] asks to see you after mess one evening.
+
+"Commander, I've got an interesting proposal for you. You know I've always loved going fast, and before I enlisted in the [[DM.BaseDescriptionDefs[LoreMAF],MAF]] I was a hell of an off-road endurance racer. We travel all over the Inner Sphere but spend half the time sitting in orbit doing nothing. I want to race again, but I need startup funding and someone to call strategy for me. That's where you come in. You call races for me, and we split the cost <i>and</i> the winnings 50-50. I even tracked down two vehicles that should work, and they both cost about the same. First is a classic for a reason, the [[DM.BaseDescriptionDefs[TBoneLoreApocalypseWR],Apocalypse World Rover]], built by [[DM.BaseDescriptionDefs[LoreGM],GM]]. The second is a newer design by [[DM.BaseDescriptionDefs[LoreEarthwerksInc],Earthwerks]], the [[DM.BaseDescriptionDefs[TBoneLoreIBexRV],Ibex RV]].\r\n\n\nWaddya say?"
 
 
+1.	Apocalypse World Rover [100k]
 
-Apocalypse World Rover - top speed 65 kph, 1600km range, BAR7 armor, 6 wheels
-Ibex RV - top speed 80kph, 500km range, BAR4 armor, 4 wheels - potentially better offroad
+"Yeah, why not? I'm a sucker for the classics, [[SCN_MW,{SCN_MW.Callsign}]]. Let's get the Apocalypse World Rover."
+
+"Awesome! The [[DM.BaseDescriptionDefs[TBoneLoreApocalypseWR],Apocalypse]] isn't the fastest or nimblest off-roader, but you can't beat it for plain durability or fuel capacity. You won't regret this, Commander {Commander.LastName}. With you running strategy and me driving, I think we can makes some real money. Plus, I bet a lot of the crew will get a kick out of watching!"
+
+[lose 100k, Blaze gets tag racer_apocalypse, high spirits 30 days.]
+
+
+2.	Ibex RV [100k]
+
+"Sure [[SCN_MW,{SCN_MW.Callsign}]], let's give it a shot. I like the look of that Ibex RV."
+
+"Yes! The [[DM.BaseDescriptionDefs[TBoneLoreIBexRV],Ibex]] was made for this kind of thing. It's faster than the Apocalypse, and nimble as a cat. The only real downsides are the smaller fuel tank and the lower-grade armor plating. I think we've got a real chance at making some good money with this, and I bet the crew will love watching too! With me driving and you on stratcom, we'll be unbeatable.
+
+[lose 100k, Blaze gets tag racer_ibex, high spirits 30 days.]
+
+
