@@ -5,9 +5,9 @@
         "Details" : "Tracks races won.",
         "Icon" : null
     },
-    "setResult" : "[[RES_MW,{RES_MW.Callsign}]] has won {RES_VALUE.ToCommaSeparatedString} races.",
-    "positiveResult" : "[[RES_MW,{RES_MW.Callsign}]] has won {RES_VALUE.ToCommaSeparatedString} more race.",
-    "negativeResult" : "[[RES_MW,{RES_MW.Callsign}]] has lost {RES_VALUE.ToCommaSeparatedString} more race.",
+    "setResult" : "You have won {RES_VALUE.ToCommaSeparatedString} races.",
+    "positiveResult" : "You have won {RES_VALUE.ToCommaSeparatedString} more race.",
+    "negativeResult" : "You have lost {RES_VALUE.ToCommaSeparatedString} more race.",
     "temporalSetResult" : "You now have exactly \u00A2{RES_VALUE.ToCommaSeparatedString} for {RES_DURATION.ToString} days",
     "temporalPositiveResult" : "You gain \u00A2{RES_VALUE.ToCommaSeparatedString} for {RES_DURATION.ToString} days",
     "temporalNegativeResult" : "You lose \u00A2{RES_VALUE.ToCommaSeparatedString} for {RES_DURATION.ToString} days",
