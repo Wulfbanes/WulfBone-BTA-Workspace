@@ -5,7 +5,7 @@
         "Details" : "Set timeout for MW",
         "Icon" : null
     },
-    "setResult" : "Your MechWarrior will be unavailable for {RES_VALUE.ToString} days",
+    "setResult" : "They will be unavailable for {RES_VALUE.ToString} days",
     "positiveResult" : "",
     "negativeResult" : "",
     "temporalSetResult" : "",
