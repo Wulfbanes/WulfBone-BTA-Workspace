@@ -1,0 +1,10 @@
+tbone_event_co_pt0Capricorn should be ready to fire (capricorn needs 22000XP spent, need to NOT be in orbit of "planet_pop_none" or "planet_other_empty"
+
+tbone_event_co_pt1Capricorn requires above fired, capricorn needs tag omtc_feet_0, and meatbag at 3 3 3 3
+
+tbone_event_co_pt2Capricorn requires above fired, capricorn needs tag omtc_feet_1, and meatbag at 5 5 5 5
+
+tbone_event_co_pt3Capricorn requires above fired, capricorn needs tag omtc_feet_2, and meatbag with some skill at 6
+
+
+
