@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "tbone_event_co_biggerDarius1",
         "Name" : "Big Trouble in Little Nassau",
-        "Details" : "[[DM.BaseDescriptionDefs[TooltipSimGameCharacterDARIUS],Darius]] knocks on your door one evening with a troubled look on his face.\r\n\r\n\"Commander, I'd like to use some personal leave, if you can spare me. I've just received a message from home and, well...I can't really talk about it. But I really need to get back there soon.\"\r\n\r\n\"Back to Artru? Nassau Heights? I thought didn't have anyone left back there...\"\r\n\r\n\"So did I, Commander. So did I.\"",
+        "Details" : "[[DM.BaseDescriptionDefs[TooltipSimGameCharacterDARIUS],Darius]] knocks on your door one evening with a troubled look on his face.\r\n\r\n\"Commander, I'd like to use some personal leave, if you can spare me. I've just received a message from home and, well...I can't really talk about it. But I really need to get back there soon.\"\r\n\r\n\"Back to Artru? Nassau Heights? I thought you didn't have anyone left back there...\"\r\n\r\n\"So did I, Commander. So did I.\"",
         "Icon" : "uixTxrSpot_CommandersQuarters.png"
     },
     "Scope" : "Company",
@@ -39,8 +39,8 @@
                     {
                         "obj" : "ExperienceSpent",
                         "op" : "LessThanOrEqual",
-                        "val" : 5600,
-                        "valueConstant" : "5600"
+                        "val" : 15000,
+                        "valueConstant" : "15000"
                     },
                     {
                         "obj" : "ExperienceSpent",
