@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "tbone_event_co_spotlightOptio",
         "Name" : "Mercenaries, Spies, and Private Eyes",
-        "Details" : "<i><b>Ave legatus. Meas litteras \"in quantum oratorem\" adicitur. Mea missio sit pergit.</i></b>\r\n\r\nThe decoded message displays on your wall-screen, bright and accusing. [[SCN_MW,{SCN_MW.Callsign}]] holds your gaze, doesn't even glance at it. Steady, unreadable. [[DM.BaseDescriptionDefs[TooltipSimGameCharacterDARIUS],Darius]] and [[TRT_MW,{TRT_MW.Callsign}]] wait just outside the door.\r\n\r\n\"{SCN_MW.Callsign}. Something you need to tell me?\"\r\n\r\n\nHe glances down at the deck, then returns your stare. \"Commander. I will not mince words. I am, as you suspect, [[DM.BaseDescriptionDefs[TBoneLoreOrdoVigilis],Ordo Vigilis]]. I am to gather intelligence on the goals of [[DM.Factions[faction_ComStar],ComStar]] in the Periphery. Although they no longer control communications in the [[DM.Factions[faction_Marian],Hegemony]], there are certain elements within the Ordo that insist they are still a threat. As you now know my purpose here, perhaps we can come to an arrangement of sorts?\"",
+        "Details" : "<i><b>Ave legatus. Meas litteras \"in quantum oratorem\" adicitur. Mea missio sit pergit.</i></b>\r\n\r\nThe decoded message displays on your wall-screen, bright and accusing. [[SCN_MW,{SCN_MW.Callsign}]] holds your gaze, doesn't even glance at it. Steady, unreadable. [[DM.BaseDescriptionDefs[TooltipSimGameCharacterDARIUS],Darius]] and [[TRT_MW,{TRT_MW.Callsign}]] wait just outside the door.\r\n\r\n\"{SCN_MW.Callsign}. Something you need to tell me?\"\r\n\r\nHe glances down at the deck, then returns your stare. \"Commander. I will not mince words. I am, as you suspect, [[DM.BaseDescriptionDefs[TBoneLoreOrdoVigilis],Ordo Vigilis]]. I am to gather intelligence on the goals of [[DM.Factions[faction_ComStar],ComStar]] in the Periphery. Although they no longer control communications in the [[DM.Factions[faction_Marian],Hegemony]], there are certain elements within the Ordo that insist they are still a threat. As you now know my purpose here, perhaps we can come to an arrangement of sorts? ComStar might have a bounty on spies, but I can make this a lot more lucrative.\"",
         "Icon" : "uixTxrSpot_CommandersQuarters.png"
     },
     "Scope" : "Company",
@@ -67,7 +67,7 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Fire him.",
+                "Name" : "Distance yourself from the spy. Fire him.",
                 "Details" : "Fire him.",
                 "Icon" : null
             },
