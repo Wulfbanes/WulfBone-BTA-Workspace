@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "tbone_event_co_pt3Capricorn",
+        "Id" : "tbone_event_co_Capricorn3",
         "Name" : "Meatbag: Graduation Day",
         "Details" : "[[SCN_MW,{SCN_MW.Callsign}]] has brought you a final message from [[DM.BaseDescriptionDefs[TBoneLoreOMTC],Outreach Mercenary Training Command]]: \r\n\r\n\r\n<b><i>[THIS IS AN AUTOMATED MESSAGE - PLEASE DO NOT REPLY DIRECTLY]\r\n\r\n\r\nAccording to our records, {TRT_MW.FirstName} {TRT_MW.LastName}, callsign: [[TRT_MW,{TRT_MW.Callsign}]] has fulfilled all requirements for completing the Field Experience Enhanced Training program. Please arrange for {TRT_MW.FirstName} {TRT_MW.LastName} to immediately depart for Outreach. As per our contract, the final payment will be released to your account pending confirmation of the desired payment method. For the final payment, you have the option of a lump-sum payment in the amount of \u00A21,500,000 or receipt of a factory-refurbished BattleMech, designation [[DM.BaseDescriptionDefs[TBoneLoreCPLT-C1b],Royal Catapult - CPLT-C1b]]. Thank you for your work with the Field Experience Enhanced Training program.\r\n\r\n\r\nAccounts Payable, FEET Program\r\n\nOutreach Mercenary Training Command</b></i>",
         "Icon" : "uixTxrSpot_ConferenceRoom.png"

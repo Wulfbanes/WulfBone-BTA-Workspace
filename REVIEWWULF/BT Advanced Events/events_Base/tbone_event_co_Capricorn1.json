@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "tbone_event_co_pt2Capricorn",
-        "Name" : "Meatbag: Report Card II",
-        "Details" : "[[SCN_MW,{SCN_MW.Callsign}]] has brought you another message from [[DM.BaseDescriptionDefs[TBoneLoreOMTC],Outreach Mercenary Training Command]]: \r\n\r\n\r\n<b><i>[THIS IS AN AUTOMATED MESSAGE - PLEASE DO NOT REPLY DIRECTLY]\r\n\r\n\r\nAccording to our records, {TRT_MW.FirstName} {TRT_MW.LastName}, callsign: [[TRT_MW,{TRT_MW.Callsign}]] has achieved level 5 [[DM.BaseDescriptionDefs[TBoneLoreMCC],MCCs]]. As per our contract, the second lump-sum payment has been released to the account on record, pending confirmation of message receipt. Thank you for your continued work with the Field Experience Enhanced Training program. \r\n\r\n\r\nAccounts Payable, FEET Program\r\n\nOutreach Mercenary Training Command</b></i>",
+        "Id" : "tbone_event_co_Capricorn1",
+        "Name" : "Meatbag: Report Card I",
+        "Details" : "[[SCN_MW,{SCN_MW.Callsign}]] has brought you another message from [[DM.BaseDescriptionDefs[TBoneLoreOMTC],Outreach Mercenary Training Command]]: \r\n\r\n\r\n<b><i>[THIS IS AN AUTOMATED MESSAGE - PLEASE DO NOT REPLY DIRECTLY]\r\n\r\n\r\nAccording to our records, {TRT_MW.FirstName} {TRT_MW.LastName}, callsign: [[TRT_MW,{TRT_MW.Callsign}]] has achieved level 3 [[DM.BaseDescriptionDefs[TBoneLoreMCC],MCCs]]. As per our contract, the first lump-sum payment has been released to the account on record, pending confirmation of message receipt. Thank you for your continued work with the Field Experience Enhanced Training program. \r\n\r\n\r\nAccounts Payable, FEET Program\r\n\nOutreach Mercenary Training Command</b></i>",
         "Icon" : "uixTxrSpot_ConferenceRoom.png"
     },
     "Scope" : "Company",
@@ -42,7 +42,7 @@
                     "tagSetSourceFile" : "",
                     "items" : [
                         "name_Capricorn",
-                        "omtc_feet_1"
+                        "omtc_feet_0"
                     ]
                 },
                 "ExclusionTags" : {
@@ -77,26 +77,26 @@
                     {
                         "obj" : "Guts",
                         "op" : "GreaterThanOrEqual",
-                        "val" : 5,
-                        "valueConstant" : "5"
+                        "val" : 3,
+                        "valueConstant" : "3"
                     },
                     {
                         "obj" : "Piloting",
                         "op" : "GreaterThanOrEqual",
-                        "val" : 5,
-                        "valueConstant" : "5"
+                        "val" : 3,
+                        "valueConstant" : "3"
                     },
                     {
                         "obj" : "Tactics",
                         "op" : "GreaterThanOrEqual",
-                        "val" : 5,
-                        "valueConstant" : "5"
+                        "val" : 3,
+                        "valueConstant" : "3"
                     },
                     {
                         "obj" : "Gunnery",
                         "op" : "GreaterThanOrEqual",
-                        "val" : 5,
-                        "valueConstant" : "5"
+                        "val" : 3,
+                        "valueConstant" : "3"
                     }
                 ]
             }
@@ -116,7 +116,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Confirm receipt of message.",
-                        "Details" : "\"Commander, [[TRT_MW,{TRT_MW.Callsign}]] is progressing nicely...we'll make a real MechWarrior out of him yet!\"\r\n\r\n\r\n\"Great to hear, [[SCN_MW,{SCN_MW.Callsign}]]. Seems like you've been enjoying this, and your grasp of tactics is improving as well.\"\r\n\r\n\r\n\"Yeah, it's been good mental exercise for me trying to keep track of [[TRT_MW,{TRT_MW.Callsign}]] and give him pointers while we're on contracts. The distraction is still playing hell with my accuracy, but I'm working on it.\"",
+                        "Details" : "\"So [[SCN_MW,{SCN_MW.Callsign}]], how <i>is</i> training [[TRT_MW,{TRT_MW.Callsign}]] coming along? Anything I can help with?\"\r\n\r\n\r\n\"It's actually going pretty well, Commander. [[TRT_MW,{TRT_MW.FirstName}]] is still pretty green, but he's coming around. At least he knows how many heatsinks a core requires now.\"\r\n\r\n\r\n\"Glad to hear it. Sooner we get him trained up, the more we make off this deal. Just be careful, the more advanced {TRT_MW.Callsign} gets, the more of your attention training him is going to take.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -127,27 +127,20 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "",
                                 "items" : [
-                                    "omtc_feet_2"
+                                    "omtc_feet_1"
                                 ]
                             },
                             "RemovedTags" : {
                                 "tagSetSourceFile" : "",
                                 "items" : [
-                                    "omtc_feet_1"
+                                    "omtc_feet_0"
                                 ]
                             },
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Gunnery",
+                                    "name" : "Piloting",
                                     "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                },
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Tactics",
-                                    "value" : "1",
                                     "set" : false,
                                     "valueConstant" : null
                                 }

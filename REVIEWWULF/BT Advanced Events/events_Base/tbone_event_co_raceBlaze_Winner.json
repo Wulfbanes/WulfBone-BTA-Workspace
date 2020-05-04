@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "tbone_event_co_championBlaze",
+        "Id" : "tbone_event_co_raceBlaze_Winner",
         "Name" : "Need For Speed: Results",
         "Details" : "[[SCN_MW,{SCN_MW.Callsign}]] asks to speak to the crew after the morning briefing.\r\n\r\n\"Everyone! I got a message from [[DM.BaseDescriptionDefs[TBoneLoreISORES],ISORES]] last night with the results of our race season, but I wanted to wait to open it until you were all around. Before I do though, I wanted to thank you both. Commander, I had a blast racing again and I couldn't have done it without your advice, or the financial support of the company. Yang, I can't thank you enough for agreeing to maintain and repair the racer after every race. We made a pretty good team didn't we? Now, let's see how we did.\"",
         "Icon" : "uixTxrSpot_DailyBriefing.png"

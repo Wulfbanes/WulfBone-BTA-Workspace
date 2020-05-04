@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "tbone_event_co_spotlightBlaze",
+        "Id" : "tbone_event_co_raceBlaze_Start",
         "Name" : "The Need For Speed",
         "Details" : "[[SCN_MW,{SCN_MW.Callsign}]] asks to see you after mess one evening.\r\n\r\n\"Commander, I've got a proposal for you. We travel all over the Inner Sphere but spend half the time sitting in orbit doing nothing, you know?\r\n\r\n\"Yeah, and?\"\r\n\r\nWell, before I enlisted in the [[DM.BaseDescriptionDefs[LoreMAF],MAF]] I was a hell of an off-road endurance racer. I want to race again, but I need startup funding and someone to call strategy for me. That's where you come in. You call races for me, and we split the cost <i>and</i> the winnings 50-50. I even tracked down two vehicles that should work, and they both cost about the same. First is a classic for a reason, the [[DM.BaseDescriptionDefs[TBoneLoreApocalypseWR],Apocalypse World Rover]], built by [[DM.BaseDescriptionDefs[LoreGM],GM]]. The second is a newer design by [[DM.BaseDescriptionDefs[LoreEarthwerksInc],Earthwerks]], the [[DM.BaseDescriptionDefs[TBoneLoreIbexRV],Ibex RV]]. Win more than we lose, and [[DM.BaseDescriptionDefs[TBoneLoreISORES],ISORES]] will recognize us as champions! Waddya say?\"",
         "Icon" : "uixTxrSpot_CommandersQuarters.png"
