@@ -21,7 +21,8 @@
 	{ "Type": "BaseDescriptionDef",	"Path": "lore",					"AddToDB": true },
 	{ "Type": "SimGameStatDescDef", "Path": "simGameStatDesc", 		"AddToDB": true },
 	{ "Type": "ForcedTimelineEvent", "Path": "events_TimeTriggers",	"AddToDB": true },
-	{ "Type": "ContractOverride",		"Path": "contract"							}
+	{ "Type": "ContractOverride",	"Path": "contract"								},
+	{ "Type": "Video", 				"Path": "Video"									}
   ],
     "OptionallyDependsOn": [		
     ],
