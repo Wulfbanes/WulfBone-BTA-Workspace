@@ -1,0 +1,37 @@
+this ones a doozy.
+
+tbone_event_co_MaxRevenge1 requires commander uninjured and spent 23000XP, one other MW uninjured, and Max injured. And also need to be in wolf space.
+
+If you choose to support Max (basically fight for him bc he's injured), you can make him call his mother or not. That decides his outcome if you win the duel.
+If you choose to support Max and lose the duel, Max gets low morale but that's it.
+tbone_event_co_MaxRevenge2 is the post-mission, forced from the contract. 0 weight, and a required company tag "do_not_fire"
+
+If you choose to support Max, but actually abandon the contract (or take >15 days to do it), he'll leave you and die.
+		tbone_event_co_MaxRevenge2a is a regular event (high weight), exclusion tag: max_revenge_cooldown, and requires max_revenge 1-2 as below
+
+The outcomes for tbone_event_co_MaxRevenge2 are decided by a stat, max_revenge: 
+		1-2 means contract accepted (required for abandonment above).
+		3-4 means contract attempted but failed,
+		5 means success did not call mom,
+		6 means success and called mom.
+
+
+
+
+
+If you choose NOT to support Max, he leaves and gets captured (unavailable 9999 days), and within 7-21 days you get an event with a choice to mount a rescue mission
+	Rescue option event (tbone_event_co_MaxRescue1) is forced from option in tbone_event_co_MaxRevenge1, 0 weight, and a required company tag "do_not_fire"
+	
+
+If you choose NOT to rescue him, he gets executed.
+If you choose to rescue him, but abandon it/don't do it within 15 days, he gets executed.
+
+If you choose to rescue him, the results are all the same on a success. If you do the 2ndary objective you also get a Jenner IIC.
+tbone_event_co_MaxRescue2 is the post-mission, forced from the contract. 0 weight, and a required company tag "do_not_fire"
+
+The outcomes for tbone_event_co_MaxRescue2 are decided by a stat, max_rescue:
+1 means rescue contract accepted (required for abandonment above)
+2 means rescue contract attempted but failed
+4 means rescue contract success, did not complete 2ndary objective
+6 means rescue contract success, completed 2ndary objective
+
