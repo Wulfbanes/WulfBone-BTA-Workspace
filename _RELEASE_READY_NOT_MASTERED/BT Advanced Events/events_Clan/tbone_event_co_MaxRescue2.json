@@ -1,17 +1,19 @@
 {
     "Description" : {
-        "Id" : "tbone_event_co_ningyo",
-        "Name" : "Ain't That A Kick in the Head",
-        "Details" : "Following the last deployment, [[DM.BaseDescriptionDefs[TBoneLoreDoc],Doc Cobble]] and [[SCN_MW,{SCN_MW.Callsign}]] call you to the MedBay, where you find her laying on an exam table, him looking over a chart.\r\n\r\nDoc looks up from her chart, \"Commander. After checking her injuries over, I found a tumor in {SCN_MW.Callsign}'s brain and I think it may be what's causing her to get sick when wearing the [[DM.BaseDescriptionDefs[TBoneLoreNeurohelmet],neurohelmet]].\r\n\r\n{SCN_MW.Callsign} chimes in, \"Doc says I have a few options, and they're all surgery...but I'm scared. I've been reading about these rare silicon dioxide crystals that are supposed to be able to shrink tumors on their own, but they're kind of expensive. What do you think?\"\r\n\r\nYou consider a moment before asking \"Doc, what kind of surgery we talking about here? Is this crystal option real?\"\r\n\r\n\"It's brain surgery, Commander. She'll be feeling the after-effects for a while, but the better our facilities are, the faster her recovery will be. As for the crystals, <i>could</i> they work? Sure. Just like our XO <i>could</i> learn to read a map.\"",
-        "Icon" : "uixTxrSpot_MedBayDoc.png"
+        "Id" : "tbone_event_co_MaxRescue2",
+        "Name" : "A Dish Served Cold - Rescue Aftermath",
+        "Details" : "[[DM.BaseDescriptionDefs[TooltipSimGameCharacterDARIUS],Darius]] is waiting to further debrief you after the op, although you already have a pretty good idea what he's going to say.\r\n\r\n\r\n\"XO. Give me a status update. Anything I missed in the post-mission report?\"",
+        "Icon" : "uixTxrSpot_DailyBriefing.png"
     },
     "Scope" : "Company",
-    "Weight" : 10000,
+    "Weight" : 0,
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
             "tagSetSourceFile" : "",
-            "items" : []
+            "items" : [
+                "do_not_fire"
+            ]
         },
         "ExclusionTags" : {
             "tagSetSourceFile" : "",
@@ -28,21 +30,14 @@
                 "RequirementTags" : {
                     "tagSetSourceFile" : "",
                     "items" : [
-                        "name_Ningyo"
+                        "name_Max"
                     ]
                 },
                 "ExclusionTags" : {
                     "tagSetSourceFile" : "",
                     "items" : []
                 },
-                "RequirementComparisons" : [
-                    {
-                        "obj" : "Injuries",
-                        "op" : "GreaterThanOrEqual",
-                        "val" : 1,
-                        "valueConstant" : "1"
-                    }
-                ]
+                "RequirementComparisons" : []
             }
         }
     ],
@@ -50,8 +45,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "\"Let's do the surgery, and let's do it right.\"",
-                "Details" : "[Argo MedBay 2, \u00A2100000]",
+                "Name" : "Continue debrief.",
+                "Details" : "(Mission failed)",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -59,9 +54,7 @@
                     "Scope" : "Company",
                     "RequirementTags" : {
                         "tagSetSourceFile" : "",
-                        "items" : [
-                            "argo_medBay2"
-                        ]
+                        "items" : []
                     },
                     "ExclusionTags" : {
                         "tagSetSourceFile" : "",
@@ -69,10 +62,10 @@
                     },
                     "RequirementComparisons" : [
                         {
-                            "obj" : "Funds",
-                            "op" : "GreaterThanOrEqual",
-                            "val" : 100000,
-                            "valueConstant" : "100000"
+                            "obj" : "max_rescue",
+                            "op" : "Equal",
+                            "val" : 2,
+                            "valueConstant" : "2"
                         }
                     ]
                 }
@@ -81,62 +74,12 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "\"Let's do the surgery, and let's do it right.\"",
-                        "Details" : "Several hours later, [[DM.BaseDescriptionDefs[TBoneLoreDoc],Doc]] calls you back to the MedBay. To your surprise, you see [[SCN_MW,{SCN_MW.Callsign}]] sitting up in bed, chatting with Doc as you walk in.\r\n\r\n\"I take it the surgery went well then?\"\r\n\r\n\"Doc says I should be back in the cockpit within a week. I might be off my game for a little while, but he's pretty sure I won't have any nausea after that!\"\r\n\r\n\"That's great to hear {SCN_MW.Callsign}. Doc, excellent work as always.\"",
+                        "Name" : "(Mission failed) Continue debrief.",
+                        "Details" : "\"Not much, Commander. We failed...it's as simple as that. We couldn't get [[SCN_MW,{SCN_MW.Callsign}]] out of there, and the bit of salvage we might have scrounged is small consolation. Now that the [[DM.Factions[faction_ClanWolf],Wolves]] are aware we're in the AO, we're not going to be able to get anywhere near [[SCN_MW,{SCN_MW.Callsign}]] again. He's as good as dead, if he hasn't been executed already.",
                         "Icon" : null
                     },
                     "Weight" : 100,
                     "Results" : [
-                        {
-                            "Scope" : "SecondaryMechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Piloting",
-                                    "value" : "1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        },
-                        {
-                            "Scope" : "SecondaryMechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "Stats" : [
-                                {
-                                    "typeString" : "System.Int32",
-                                    "name" : "Piloting",
-                                    "value" : "-1",
-                                    "set" : false,
-                                    "valueConstant" : null
-                                }
-                            ],
-                            "Actions" : null,
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 30
-                        },
                         {
                             "Scope" : "Company",
                             "Requirements" : null,
@@ -151,13 +94,47 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "-100000",
+                                    "name" : "Morale",
+                                    "value" : "-4",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
                             ],
-                            "Actions" : null,
+                            "Actions" : [],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : null,
+                                    "name" : null,
+                                    "value" : null,
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Kill",
+                                    "value" : "",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "The price of vengeance."
+                                    ]
+                                }
+                            ],
                             "ForceEvents" : null,
                             "TemporaryResult" : false,
                             "ResultDuration" : 0
@@ -181,23 +158,43 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "\"Doc, do what you can with what we have on hand.\"",
-                "Details" : "-",
+                "Name" : "Continue debrief.",
+                "Details" : "(Mission successful)",
                 "Icon" : null
             },
-            "RequirementList" : [],
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : [
+                        {
+                            "obj" : "max_rescue",
+                            "op" : "Equal",
+                            "val" : 4,
+                            "valueConstant" : "4"
+                        }
+                    ]
+                }
+            ],
             "ResultSets" : [
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "\"Doc, do what you can with what we have on hand.\"",
-                        "Details" : "Several hours later, [[DM.BaseDescriptionDefs[TBoneLoreDoc],Doc]] calls you back to the MedBay, where you see [[SCN_MW,{SCN_MW.Callsign}]] asleep up in bed, IV lines in both arms.\r\n\r\n\"Doc, what's the verdict? How'd the surgery go?\"\r\n\r\n\"There were a few complications, but she's out of the woods now and I was able to remove the tumor entirely. I'll wake her up in the next few days and we'll go from there, but my guess is she'll be out of commission for a month, and won't be at 100% for some time after.\"\r\n\r\n\"Alright, keep me posted.\"",
+                        "Name" : " (Mission successful) Continue debrief.",
+                        "Details" : "\"We got [[SCN_MW,{SCN_MW.Callsign}]] out of there, although he's definitely a bit worse for the wear. I guess the [[DM.Factions[faction_ClanWolf],Wolves]] don't treat their prisoners slated for execution too well.",
                         "Icon" : null
                     },
                     "Weight" : 100,
                     "Results" : [
                         {
-                            "Scope" : "SecondaryMechWarrior",
+                            "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
                                 "tagSetSourceFile" : "",
@@ -210,8 +207,8 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Piloting",
-                                    "value" : "1",
+                                    "name" : "Morale",
+                                    "value" : "2",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
@@ -225,8 +222,10 @@
                             "Scope" : "SecondaryMechWarrior",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_unstable"
+                                ]
                             },
                             "RemovedTags" : {
                                 "tagSetSourceFile" : "",
@@ -235,40 +234,30 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Piloting",
+                                    "name" : "Guts",
                                     "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Tactics",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "2",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
                             ],
                             "Actions" : null,
                             "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 60
-                        },
-                        {
-                            "Scope" : "SecondaryMechWarrior",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "RemovedTags" : {
-                                "tagSetSourceFile" : "",
-                                "items" : []
-                            },
-                            "Stats" : null,
-                            "Actions" : [
-                                {
-                                    "Type" : "MechWarrior_SetTimeout",
-                                    "value" : "30",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : true,
-                            "ResultDuration" : 30
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
                         }
                     ]
                 }
@@ -289,8 +278,8 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "\"Let's give the healing crystals a shot.\"",
-                "Details" : "[\u00A2250000]",
+                "Name" : "Continue debrief.",
+                "Details" : "(Mission successful, 2nd obj secure)",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -306,10 +295,10 @@
                     },
                     "RequirementComparisons" : [
                         {
-                            "obj" : "Funds",
-                            "op" : "GreaterThanOrEqual",
-                            "val" : 250000,
-                            "valueConstant" : "250000"
+                            "obj" : "max_rescue",
+                            "op" : "GreaterThan",
+                            "val" : 4,
+                            "valueConstant" : "4"
                         }
                     ]
                 }
@@ -318,8 +307,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_2_0",
-                        "Name" : "\"Let's give the healing crystals a shot.\"",
-                        "Details" : "\"Brain surgery seems like a hell of a risk to take, and I can't afford to have you laid up in a hospital bed any longer than necessary.\"\r\n\r\n\"Great Commander! I'll order them right away!\"\r\n\r\nDoc shakes his head and grumbles to himself, \"Why do I even bother when everyone else is a damn expert on everything...\"",
+                        "Name" : " (Mission successful, 2nd obj secure) Continue debrief.",
+                        "Details" : "\"We got [[SCN_MW,{SCN_MW.Callsign}]] out of there, although he's definitely a bit worse for the wear. I guess the [[DM.Factions[faction_ClanWolf],Wolves]] don't treat their prisoners slated for execution too well.\r\n\r\n\r\nSeems we picked up a fair bit of salvage too, so that should keep [[DM.BaseDescriptionDefs[TooltipSimGameCharacterSUMIRE],Sumire]] from griping too badly.",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -338,8 +327,56 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "Funds",
-                                    "value" : "-250000",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "Mech_AddRoster",
+                                    "value" : "mechdef_jenner_JR7-IIC",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_unstable"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Guts",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Tactics",
+                                    "value" : "-1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Injuries",
+                                    "value" : "2",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
