@@ -21,3 +21,4 @@ Copy-Item -Path "$basefolder\DEVTBONE\*"    -Filter * -Destination "$basefolder\
 Copy-Item -Path "$basefolder\DEVWULF\*"     -Filter * -Destination "$basefolder\MODS" –Recurse -Force
 Copy-Item -Path "$basefolder\REVIEWTBONE\*" -Filter * -Destination "$basefolder\MODS" –Recurse -Force
 Copy-Item -Path "$basefolder\REVIEWWULF\*"  -Filter * -Destination "$basefolder\MODS" –Recurse -Force
+Copy-Item -Path "$basefolder\_RELEASE_READY_NOT_MASTERED\*"  -Filter * -Destination "$basefolder\MODS" –Recurse -Force
