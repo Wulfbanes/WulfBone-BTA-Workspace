@@ -173,11 +173,7 @@
                                     "valueConstant" : null,
                                     "additionalValues" : [
                                         "ClanWolf",
-                                        "SelfEmployed",
-										null,
-										null,
-										null,
-										"TRUE"
+                                        "SelfEmployed"
                                     ]
                                 }
                             ],
